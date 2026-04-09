@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $article = new Article();
         $article->setConnection($db);
 
-        $article->createArticle($titre, $contenu);
+        $article->create($titre, $contenu);
 
         echo "Article added successfully";
     }
@@ -46,7 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </form>
 
     <a href="index.php">result</a>
-
 
 </body>
 

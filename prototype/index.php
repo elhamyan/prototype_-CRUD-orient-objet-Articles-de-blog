@@ -1,5 +1,5 @@
 <?php
-require 'article.php'; 
+require 'article.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,11 +9,15 @@ require 'article.php';
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <h1>liste des articles</h1>
+    <br><br><br>
+    <a href="craete.php">add article</a>
+    <br><br><br><br>
 </head>
 <body>
     <div class="countent">
         <?php
-        $articles= Article::readAll();
+          $article = new Article();
+          $articles = $article->readAll();
         foreach($articles as $article){
             echo "<div class='article'>";
             echo "<h1>".$article['titre']."</h1>";

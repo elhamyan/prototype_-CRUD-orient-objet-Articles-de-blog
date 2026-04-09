@@ -1,7 +1,7 @@
 <?php 
 require 'database.php';
 class Article{
-    public static function  readAll(){
+    public function  readAll(){
         $db = new Database();
 
         $conn = $db->getConnection();
@@ -17,7 +17,7 @@ class Article{
         $this->conn = $db;
     }
 
-    public function createArticle($titre, $contenu) {
+    public function create($titre, $contenu) {
         $query = "INSERT INTO article (titre, contenu) VALUES (:titre, :contenu)";
         
         $stmt = $this->conn->prepare($query);
