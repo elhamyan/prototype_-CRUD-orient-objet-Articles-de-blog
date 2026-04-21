@@ -1,6 +1,6 @@
 <?php
 require 'database.php';
-require 'articl.php';
+require 'article.php';
 
 $db = (new Database())->getConnection();
 
@@ -18,6 +18,7 @@ $articles = $article->read();
         <h3><?= $a['titre'] ?></h3>
         <p><?= $a['contenu'] ?></p>
 
-        <a href="detelt.php?id=<?= $a['id'] ?>">❌ Supprimer</a>
+        <a href="detelt.php?id=<?= $a['id'] ?>"
+        style >❌ Supprimer</a>
     </div>
 <?php endforeach; ?>

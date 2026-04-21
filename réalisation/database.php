@@ -7,11 +7,9 @@ class Database{
 
     public function getConnection(){
         try{
-            return new PDO(
-                "mysql:host=$this->host;dbname=$this->dbname",
-                $this->username,
-                $this->password);
+            return new PDO( "mysql:host=$this->host;dbname=$this->dbname", $this->username, $this->password);
         }catch(PDOException $e){
+            echo"errore:".$e->getMessage();
 
         }
     }

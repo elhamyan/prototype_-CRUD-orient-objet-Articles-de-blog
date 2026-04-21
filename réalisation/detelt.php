@@ -1,6 +1,6 @@
 <?php
 require 'database.php';
-require 'articl.php';
+require 'article.php';
 
 $db = (new Database())->getConnection();
 

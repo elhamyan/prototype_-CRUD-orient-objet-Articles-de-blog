@@ -1,9 +1,15 @@
+body{
+    background-image:url(image/image.png) ;
+    color: white;
+}
 form {
     width: 300px;
     margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    background: rgba(91, 87, 43, 0.572);
+    padding: 25px;
+    text-align: center;
+    color: white;
+ 
 }
 
 input, textarea {
@@ -13,8 +19,19 @@ input, textarea {
 }
 
 button {
-    width: 100%;
-    background: green;
+    width: auto;
+    background: rgba(182, 153, 24, 0.544);
     color: white;
-    padding: 10px;
+    padding: 5px;
+    border-radius:15px;
+    text-align: center;
+}
+a {
+    background: rgb(121, 76, 76);
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+
+    color: rgb(30, 10, 10);
+    text-decoration: none;
 }
